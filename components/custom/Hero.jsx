@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
+import SignInButton from './SignInButton'
 
 function Hero() {
   return (
@@ -11,9 +12,9 @@ function Hero() {
       <p className='text-center mt-4'>Longing to impress clients with AI-powered emails but don't have enough time to build on your own? Use the AI-powered email templates that already have AI-generated imagery and copy -- save time on email production with us.</p>
       <div className='flex gap-5 mt-6'>
         <Button variant="outline">Try Yourself</Button>
-        <Button>Get Started</Button>
+        <SignInButton/>
       </div>
-      <Image src={'/landing.png'} width={1000} height={800} className='mt-12 rounded-xl'></Image>
+      {/* <Image src={'/landing.png'} width={1000} height={800} className='mt-12 rounded-xl'></Image> */}
     </div>
   )
 }

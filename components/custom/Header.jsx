@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
+import SignInButton from './SignInButton'
 
 function Header() {
   return (
     <div className='flex justify-between items-center p-4 shadow-sm px-10'>
       <Image src={'/logo.svg'} alt='logo'
-      width={100}
-      height={90}></Image>
+      width={70}
+      height={60}></Image>
 
-      <Button>Get Started</Button>
+      <SignInButton/>
     </div>
   )
 }
